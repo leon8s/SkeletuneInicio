@@ -1,0 +1,26 @@
+{
+  "apiVersion": 2,
+  "apiVersionMinor": 0,
+  "allowedPaymentMethods": [{
+    "type": "CARD",
+    "parameters": {
+      "allowedAuthMethods": ["PAN_ONLY", "CRYPTOGRAM_3DS"],
+      "allowedCardNetworks": ["VISA", "MASTERCARD"]
+    },
+    "tokenizationSpecification": {
+      "type": "PAYMENT_GATEWAY",
+      "parameters": {
+        "gateway": "example",
+        "gatewayMerchantId": "exampleGatewayMerchantId"
+      }
+    }
+  }],
+  "merchantInfo": {
+    "merchantName": "Ejemplo App"
+  },
+  "transactionInfo": {
+    "totalPriceStatus": "FINAL",
+    "totalPrice": "149.99",
+    "currencyCode": "MXN"
+  }
+}
